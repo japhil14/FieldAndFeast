@@ -1,0 +1,327 @@
+/* IMPORTED FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ROOT VARIABLES */
+
+:root {
+  --midnight-blue: #1f2a44;
+  --olive-green: #76885b;
+  --champagne-gold: #e5c185;
+  --linen: #f8f4ec;
+  --dark-charcoal: #2b2b2b;
+  --soft-white: #faf9f6;
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+
+/* body/global styling */
+
+html {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: 16px;
+}
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+/* header styles */
+
+header {
+  background-color: var(--midnight-blue);
+  width: 100%;
+}
+
+header > img {
+  margin: 0 auto;
+  display: block;
+  max-width: 200px;
+}
+
+h1 {
+  color: var(--soft-white);
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+header > p {
+  color: var(--soft-white);
+  font-style: italic;
+  margin: 20px auto 0;
+  width: fit-content;
+  font-size: 1.2rem;
+}
+
+nav {
+  background-color: var(--champagne-gold);
+  margin-top: 30px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+
+nav a {
+  color: var(--midnight-blue);
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+/* main styles */
+
+main {
+  padding: 25px;
+  background-color: var(--linen);
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--dark-charcoal);
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+main > section {
+  padding: 30px 0 20px;
+  border-bottom: 2px solid var(--champagne-gold);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* about styles */
+
+#about p {
+  color: var(--dark-charcoal);
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+/* offerings styles */
+
+#offerings > div > section {
+  background-color: var(--olive-green);
+  color: var(--soft-white);
+  padding: 15px;
+  margin: 15px auto;
+  border-radius: 10px;
+  line-height: 1.4;
+  box-shadow: -10px 20px 15px -20px rgba(0, 0, 0, 0.75);
+}
+
+#offerings :last-child {
+  margin-bottom: 0;
+}
+#offerings ul {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* gallery styles */
+
+#gallery > p {
+  color: var(--dark-charcoal);
+  line-height: 1.4;
+}
+
+#gallery img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: var(--soft-white);
+  margin: 20px auto;
+  box-shadow: -10px 20px 15px -20px rgba(0, 0, 0, 0.75);
+}
+
+.card > p {
+  padding: 10px;
+  text-align: center;
+  font-style: italic;
+}
+
+#gallery a {
+  box-sizing: border-box;
+  display: block;
+  background-color: var(--olive-green);
+  color: var(--soft-white);
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* footer styles */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200px;
+  background-color: var(--midnight-blue);
+  color: var(--soft-white);
+  text-align: center;
+  padding-top: 30px;
+}
+
+address {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--champagne-gold);
+  font-weight: bold;
+}
+
+address a:first-of-type {
+  color: var(--soft-white);
+  font-weight: 500;
+}
+
+/* MEDIA QUERY (medium) */
+
+@media all and (min-width: 600px) {
+  #offerings > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  #offerings > div > section {
+    margin: 0;
+  }
+
+  #offerings h2 {
+    margin-bottom: 30px;
+  }
+
+  #offerings > div :last-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+/* MEDIA QUERY (large) */
+
+@media all and (min-width: 900px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* MEDIA QUERY (xl) */
+
+@media all and (min-width: 1200px) {
+  .card-container {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
